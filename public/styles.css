@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player-info {
+  text-align: center;
+}
+
+.song-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.artist-name {
+  font-size: 18px;
+  color: #bbb;
+}
+
+#lyric-container {
+  max-height: 70vh;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #1db954; /* Border hijau mirip Spotify */
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Hide the scrollbar but keep it functional */
+#lyric-container::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+#lyric {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.lyric-line {
+  opacity: 0.6; /* Mulai dengan opacity lebih rendah */
+  font-size: 1rem; /* Ukuran font normal */
+  transition: opacity 0.3s, font-size 0.3s; /* Smooth transition untuk opacity dan font-size */
+}
+
+.lyric-line.selected {
+  opacity: 1; /* Lirik yang dipilih akan lebih terlihat */
+  font-size: 1.5rem; /* Membesarkan font lirik yang sedang aktif */
+}
+
+.lyric-line.past {
+  opacity: 0.3; /* Lirik yang sudah lewat akan lebih transparan */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+  top: -20px;
+}
+
+.play-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play-button:hover {
+  background-color: #1ed760;
+}
+
+.play-button:active {
+  background-color: #1aa34a;
+}

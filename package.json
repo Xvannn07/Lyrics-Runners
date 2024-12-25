@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "lyrics-runner",
+  "description": "![](https://d.uguu.se/lSVzFUKN.png)",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xvannn07/lyrics-runners.git"
+  },
+  "keywords": [
+    "lyrics-runner"
+  ],
+  "author": "Xvannn07",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xvannn07/lyrics-runners/issues"
+  },
+  "homepage": "https://github.com/xvannn07/lyrics-runners#readme"
+}
